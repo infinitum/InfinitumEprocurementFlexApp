@@ -1,12 +1,12 @@
-<?xml version=”1.0″ encoding=”UTF-8″?>
+<?xml version="1.0" encoding="UTF-8">
 <services-config>
 	<services>
-		<service-include file-path=”remoting-config.xml” />
+		<service-include file-path="remoting-config.xml" />
 	</services>
 
 	<channels>
-		<channel-definition id=”my-amfphp” class=”mx.messaging.channels.AMFChannel”>
-			<endpoint uri=”http://www.sitelocal.com.br/amfphp/gateway.php” class=”flex.messaging.endpoints.AMFEndpoint”/>
+		<channel-definition id="my-amfphp" class="mx.messaging.channels.AMFChannel">
+			<endpoint url="http://www.sitelocal.com.br/amfphp/gateway.php" class="flex.messaging.endpoints.AMFEndpoint"/>
 		</channel-definition>
 	</channels>
 </services-config> 
