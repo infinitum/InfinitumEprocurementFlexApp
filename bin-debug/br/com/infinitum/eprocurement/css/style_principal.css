@@ -1,0 +1,111 @@
+/* CSS file */
+global
+{
+	color: #336699;
+	dropdownStyleName: comboBoxDropdown;
+}
+Alert
+{
+	background-color: #93C447;
+	fillColors: #C9F80F, #93C447;
+	border-style: solid;
+	border-color: #009900;
+	button-style-name: buttonAlertStyle;
+}
+
+.buttonAlertStyle
+{
+	fillAlphas: 1.0, 1.0;
+	fillAlphas: 1.0, 1.0;
+	fillColors: #C9F80F, #93C447, #307418, #153808;
+	color: #FFFFFF;
+	textRollOverColor: #031326;
+	textSelectedColor: #95989B;
+	border-style: none;
+}
+
+.comboBoxDropdown
+{
+	textRollOverColor: #124E92;
+	textSelectedColor: #0C71E4;
+}
+.appBarGradienteVerde
+{
+	fillAlphas: 1.0, 1.0;
+	fillColors: #C9F80F, #93C447;
+	color: #FFFFFF;
+	fontWeight: bold;
+}
+.AccordionBar
+{
+	fillAlphas: 1.0, 1.0;
+	fillColors: #C9F80F, #93C447;
+}
+
+.dataGridAlternateColor
+{
+	alternatingItemColors: #EBD25F, #CCCCCC;
+	header-colors: #C9F80F, #93C447;
+}
+.tbBarNavigation
+{
+	color: #FFFFFF;
+	tabStyleName: tabBarTab;
+	firstTabStyleName: tabBarFirstTab;
+	lastTabStyleName: tabBarLastTab;
+	selectedTabTextStyleName: tabBarSelectedTabText;
+	background-color: #0066E5;
+}
+.tabBarTab
+{
+	fillAlphas: 1.0, 1.0;
+	fillAlphas: 1.0, 1.0;
+	fillColors: #C9F80F, #93C447, #307418, #153808;
+	color: #FFFFFF;
+	textRollOverColor: #031326;
+	textSelectedColor: #95989B;
+	selection-color: #000000;
+}
+.tabBarFirstTab
+{
+	fillAlphas: 1.0, 1.0;
+	fillColors: #C9F80F, #93C447, #538F0B, #80B404;
+	color: #FFFFFF;
+	textRollOverColor: #000307;
+}
+.tabBarLastTab
+{
+	fillAlphas: 1.0, 1.0;
+	fillColors: #C9F80F, #93C447;
+}
+.tabBarSelectedTabText
+{
+	color: #FFFFFF;
+}
+.txtTitulos
+{
+	fontFamily: Arial;
+	fontSize: 13;
+	fontWeight: bold;
+}
+.labelForms
+{
+	fontWeight: bold;
+}
+.textoDados
+{
+	color: #000000;
+	border-style:solid;
+	border-color:#e3e3e3;
+}
+.popupTitle
+{
+	borderStyle: solid;
+	headerColors: #C9F80F;
+	controlBarStyleName: titleWindowControlBar;
+}
+.titleWindowControlBar
+{
+	backgroundImage: Embed(source="../images/bg/bt_title_popup_view_cotacoes.png");
+}
+

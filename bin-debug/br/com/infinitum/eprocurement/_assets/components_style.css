@@ -1,0 +1,123 @@
+global
+{
+	color: #336699;
+	dropdownStyleName: comboBoxDropdown;
+}
+Alert
+{
+	background-color: #93C447;
+	fillColors: #C9F80F, #93C447;
+	border-style: solid;
+	border-color: #009900;
+	button-style-name: buttonAlertStyle;
+}
+
+.buttonAlertStyle
+{
+	fillAlphas: 1.0, 1.0;
+	fillAlphas: 1.0, 1.0;
+	fillColors: #C9F80F, #93C447, #307418, #153808;
+	color: #FFFFFF;
+	textRollOverColor: #031326;
+	textSelectedColor: #95989B;
+	border-style: none;
+}
+
+.comboBoxDropdown
+{
+	textRollOverColor: #124E92;
+	textSelectedColor: #0C71E4;
+}
+.appBarGradienteVerde
+{
+	fillAlphas: 1.0, 1.0;
+	fillColors: #C9F80F, #93C447;
+	color: #FFFFFF;
+	fontWeight: bold;
+}
+.AccordionBar
+{
+	fillAlphas: 1.0, 1.0;
+	fillColors: #C9F80F, #93C447;
+}
+
+.dataGridAlternateColor
+{
+	alternatingItemColors: #EBD25F, #CCCCCC;
+	header-colors: #C9F80F, #93C447;
+}
+
+.txtTitulos
+{
+	fontFamily: Arial;
+	fontSize: 13;
+	fontWeight: bold;
+}
+.labelForms
+{
+	fontWeight: bold;
+}
+.textoDados
+{
+	color: #000000;
+	border-style:solid;
+	border-color:#e3e3e3;
+}
+.popupTitle
+{
+	borderStyle: solid;
+	headerColors: #C9F80F;
+	controlBarStyleName: titleWindowControlBar;
+}
+.titleWindowControlBar
+{
+	
+}
+
+.notificationError
+{
+	borderStyle: solid;
+    borderColor: #000000;
+   	borderAlpha: 0.87;
+   	borderThickness: 2;
+   	roundedBottomCorners: true;
+   	cornerRadius: 5;
+   	backgroundAlpha: 0.84;
+   	backgroundColor: #880000;
+   	dropShadowEnabled: false;
+   	color: #FFFFFF;
+   	font-weight: bold;
+   	font-size: 10;
+}
+
+.notificationSuccess
+{
+	borderStyle: solid;
+    borderColor: #000000;
+   	borderAlpha: 0.87;
+   	borderThickness: 2;
+   	roundedBottomCorners: true;
+   	cornerRadius: 5;
+   	backgroundAlpha: 0.84;
+   	backgroundColor: #339900;
+   	dropShadowEnabled: false;
+   	color: #FFFFFF;
+   	font-weight: bold;
+   	font-size: 10;
+}
+
+.notificationNotice
+{
+	borderStyle: solid;
+    borderColor: #000000;
+   	borderAlpha: 0.87;
+   	borderThickness: 2;
+   	roundedBottomCorners: true;
+   	cornerRadius: 5;
+   	backgroundAlpha: 0.84;
+   	backgroundColor: #FFCC00;
+   	dropShadowEnabled: false;
+   	color: #FFFFFF;
+   	font-weight: bold;
+   	font-size: 10;
+}
