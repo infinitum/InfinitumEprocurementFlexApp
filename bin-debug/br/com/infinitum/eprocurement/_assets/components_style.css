@@ -121,3 +121,34 @@ Alert
    	font-weight: bold;
    	font-size: 10;
 }
+
+TabNavigator {
+   tabHeight: 23;
+   tabWidth: 119;
+   horizontalGap: -1;
+   horizontalAlign: right;
+   tabOffset: 0;
+   backgroundAlpha: 1;
+   borderStyle: solid;
+   borderThickness: 1;
+   dropShadowEnabled: true;
+   shadowDirection: center;
+   tabStyleName: "myTabs";
+   firstTabStyleName: "myTabs";
+   lastTabStyleName: "myTabs";
+   selectedTabTextStyleName: "mySelectedTabs";
+}
+
+.myTabs {
+   cornerRadius: 0;
+   highlightAlphas: 1, 1;
+   letterSpacing: 0;
+   fillAlphas: 1, 1;
+   fillColors: #ffffff, #ffffff;
+   backgroundAlpha: 1;
+   borderColor: #ffffff;
+
+}
+
+.mySelectedTabs {
+}

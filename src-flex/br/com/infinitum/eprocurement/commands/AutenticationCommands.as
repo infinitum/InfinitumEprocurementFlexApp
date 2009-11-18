@@ -11,14 +11,13 @@ package br.com.infinitum.eprocurement.commands
 		private var service:AutenticationServices = AutenticationServices.getInstance();
 		private var autenticaVO:autenticacaoVO;
 		private var objInteration:InteractionApp = new InteractionApp();
-		
 		//public var objSessao:SessionProperties;
 		
 		public function AutenticationCommands()
 		{
 		}
 		
-		public function doAutentication(dados):void
+		public function doAutentication(dados:autenticacaoVO):void
 		{
 			service.doAutentication(dados, autenticationHandler);
 		}

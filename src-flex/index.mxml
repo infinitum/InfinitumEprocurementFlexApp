@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
 	layout="absolute"
-	xmlns:template="br.com.infinitum.eprocurement.views.*"
+	xmlns:templates="br.com.infinitum.eprocurement.views.*"
 	xmlns:crud="br.com.infinitum.eprocurement.components.crud.*"
 	xmlns:mxeffects="com.adobe.ac.mxeffects.*">
 	
 	<mx:Script>
 		<![CDATA[
+			import mx.controls.Alert;
 			import br.com.infinitum.eprocurement.commands.AutenticationCommands;
-			import br.com.infinitum.eprocurement.models.*;			
-			private var Interaction:InteractionApp;
-			private function notice():void
-			{
-				Interaction = new InteractionApp();
-				Interaction.NotificationStart(Interaction.NotificationSuccess,"Erro no sistema!");
-			}
+			import br.com.infinitum.eprocurement.models.*;
+			 import mx.effects.easing.Elastic;
 		]]>
 	</mx:Script>
 	<mx:Style source="br/com/infinitum/eprocurement/_assets/components_style.css" />
 	
 	<mx:Fade id="fadeIn" duration="1000" alphaFrom="0" alphaTo="1" />
-	<mx:Fade id="fadeOut" duration="0" alphaFrom="1" alphaTo="0" />
+	<mx:Fade id="fadeOut" duration="1000" alphaFrom="1" alphaTo="0" />
 	<mx:Move id="moveIn" duration="1000"  yTo="5" />
 	<mx:Move id="moveOut" duration="1000" yTo="-150" />
-	
+	<mx:WipeUp id="wipeOut" duration="1000"/>
+    <mx:WipeDown id="wipeIn" duration="1000"/>
+    	
 	<mx:Canvas width="100%" height="100%" top="0" backgroundColor="#FFFFFF">
-		<template:HeaderApplication id="appHeader" width="100%" height="170" backgroundImage="@Embed(source='br/com/infinitum/eprocurement/_assets/bg/bg_topo_principal.png')" />
-		<template:LoginContainer hideEffect="{fadeOut}" showEffect="{fadeIn}" id="telaLogin" y="180" width="790" height="300" backgroundImage="@Embed(source='br/com/infinitum/eprocurement/_assets/bg/bg_tela_login.png')" x="{(this.width/2) - 395}"/>
-		<mx:Button click="{notice()}" top="180" label="notice" />
-		<template:NotificationComponent id="notificationError" styleName="notificationError" y="-150" NotificationError="true" x="{(this.width/2) - 150}" />
-		<template:NotificationComponent id="notificationSuccess" styleName="notificationSuccess" NotificationSuccess="true" y="-150" x="{(this.width/2) - 150}" />
-		<template:NotificationComponent id="notificationNotice" styleName="notificationNotice" NotificationNotice="true" y="-150" x="{(this.width/2) - 150}" />
+		<templates:HeaderApplication id="appHeader" width="100%" height="170" backgroundImage="@Embed(source='br/com/infinitum/eprocurement/_assets/bg/bg_topo_principal.png')" />
+		<templates:LoginContainer hideEffect="{wipeOut}" showEffect="{wipeOut}" id="telaLogin" y="180" width="790" height="300" backgroundImage="@Embed(source='br/com/infinitum/eprocurement/_assets/bg/bg_tela_login.png')" x="{(this.width/2) - 400}"/>
+		<templates:MainTemplateVisualizer id="main" y="180" visible="false" selectedIndex="0" width="98%" height="90%" paddingLeft="10" paddingRight="10" paddingBottom="10" left="12" />
+		
+		<!-- notifications -->
+		<templates:NotificationComponent id="notificationError" styleName="notificationError" y="-150" NotificationError="true" x="{(this.width/2) - 150}" />
+		<templates:NotificationComponent id="notificationSuccess" styleName="notificationSuccess" NotificationSuccess="true" y="-150" x="{(this.width/2) - 150}" />
+		<templates:NotificationComponent id="notificationNotice" styleName="notificationNotice" NotificationNotice="true" y="-150" x="{(this.width/2) - 150}" />
 	</mx:Canvas>
 </mx:Application>

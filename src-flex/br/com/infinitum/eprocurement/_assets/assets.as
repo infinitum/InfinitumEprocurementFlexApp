@@ -10,6 +10,9 @@ package br.com.infinitum.eprocurement._assets
 		[Embed('topo_principal.png')]
 		public static const TOPO:Class;
 		
+		[Embed('icos/ico_tabbar_principal.png')]
+		public static const TABPRINCIPAL:Class;
+		
 		private static var image : Assets;
 		public static function getInstance() : Assets
    		{
