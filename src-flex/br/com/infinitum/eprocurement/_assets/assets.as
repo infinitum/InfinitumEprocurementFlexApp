@@ -7,8 +7,14 @@ package br.com.infinitum.eprocurement._assets
 		[Embed('bg/bg_topo_principal.png')]
 		public static const BGTOPO:Class;  
 		
+		[Embed('bg/bg_tela_login.png')]
+		public static const TELALOGIN:Class;
+		
 		[Embed('topo_principal.png')]
 		public static const TOPO:Class;
+		
+		[Embed('icos/ico_tabbar_principal.png')]
+		public static const TABPRINCIPAL:Class;
 		
 		private static var image : Assets;
 		public static function getInstance() : Assets

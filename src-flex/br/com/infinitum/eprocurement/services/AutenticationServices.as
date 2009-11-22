@@ -39,7 +39,7 @@ package br.com.infinitum.eprocurement.services
 			service = new RemoteObject();
 			service.showBusyCursor = true;
 			service.destination = 'amfphp';
-			service.source = 'E-procurement.services.Autenticacao';
+			service.source = 'InfinitumEprocurement.services.Autenticacao';
 		}
 
 	}

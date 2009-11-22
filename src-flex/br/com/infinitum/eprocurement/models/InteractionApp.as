@@ -1,7 +1,5 @@
 package br.com.infinitum.eprocurement.models
 {
-	import br.com.infinitum.eprocurement.views.NotificationComponent;
-	
 	import flash.utils.clearInterval;
 	
 	public class InteractionApp
@@ -96,7 +94,9 @@ package br.com.infinitum.eprocurement.models
 		public function RemoveTelaLogin(menuPosition:int):void
 		{
 			this.SetTextCrumb(menuPosition);
+			//Application.application.fadeIn.play();
 			Application.application.telaLogin.visible = false;
+			Application.application.main.visible = true;
 		}
 		
 		// TODO: Seleciona uma posição num DataGrid

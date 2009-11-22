@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TabNavigator xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:navigate="br.com.infinitum.eprocurement.views.*" 
+	width="100%">
+	<navigate:PrincipaltemplateVisualization id="tabPrincipal" label="PRINCIPAL" width="100%" height="100%" />
+	<navigate:UsuariostemplateVisualization id="tabUsuario" label="USUÁRIOS" width="100%" height="100%" />
+	<navigate:CotacaoTemplateVisualization id="tabCotacao" label="COTAÇOES" width="100%" height="100%" />
+	<navigate:OrcamentoTemplateVisualization id="tabOrcamento" label="ORÇAMENTOS" width="100%" height="100%" />
+	<navigate:AdminTemplateVisualization id="tabAdmin" label="ADMIN" width="100%" height="100%" />
+</mx:TabNavigator>

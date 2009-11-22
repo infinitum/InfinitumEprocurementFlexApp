@@ -2,10 +2,21 @@
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="300" height="120" creationComplete="{Init()}">
 	<mx:Script>
 		<![CDATA[
-			public var _NotificationError:Boolean;
-			public var _NotificationSuccess:Boolean;
-			public var _NotificationNotice:Boolean;
-			public var NotificationMessage:String;
+			private var _NotificationError:Boolean;
+			private var _NotificationSuccess:Boolean;
+			private var _NotificationNotice:Boolean;
+			private var _NotificationMessage:String;
+			
+			public function set NotificationMessage(value:String):void
+			{
+				this._NotificationMessage = value;
+			}
+			
+			[Bindable]
+			public function get NotificationMessage():String
+			{
+				return this._NotificationMessage;
+			}
 			
 			public function set NotificationError(value:Boolean):void
 			{
@@ -27,23 +38,19 @@
 				if(this._NotificationError)
 				{
 					icone.source = "br/com/infinitum/eprocurement/_assets/icos/error.png";
-					titulo.text = "Mensagem de Erro!";
 				}
 				if(this._NotificationSuccess)
 				{
 					icone.source = "br/com/infinitum/eprocurement/_assets/icos/success.png";
-					titulo.text = "Sucesso!";
 				}
 				if(this._NotificationNotice)
 				{
 					icone.source = "br/com/infinitum/eprocurement/_assets/icos/notice.png";
-					titulo.text = "Atenção!";
 				}
 			}
 		]]>
 	</mx:Script>
 	
-	<mx:Image id="icone" visible="true" x="11" y="46" width="60" height="60"/>
-	<mx:Label id="titulo" x="11" y="12" text="" fontWeight="bold" color="#FFFFFF" fontFamily="Arial" fontSize="14"/>
-	<mx:Text id="message" text="{NotificationMessage}" x="79" width="211" height="60" fontFamily="Arial" fontSize="10" fontWeight="bold" color="#FFFFFF" top="46" textAlign="left"/>
+	<mx:Image id="icone" visible="true" x="11" y="32" width="60" height="60"/>
+	<mx:Text id="message" text="{NotificationMessage}" x="79" width="211" height="60" fontFamily="Arial" fontSize="10" fontWeight="bold" color="#FFFFFF" top="16" textAlign="left"/>
 </mx:Canvas>
