@@ -7,10 +7,11 @@
 	
 	<mx:Script>
 		<![CDATA[
+			import br.com.infinitum.eprocurement._assets.Assets;
 			import mx.controls.Alert;
 			import br.com.infinitum.eprocurement.commands.AutenticationCommands;
 			import br.com.infinitum.eprocurement.models.*;
-			 import mx.effects.easing.Elastic;
+			import mx.effects.easing.Elastic;
 		]]>
 	</mx:Script>
 	<mx:Style source="br/com/infinitum/eprocurement/_assets/components_style.css" />
@@ -26,7 +27,6 @@
 		<templates:HeaderApplication id="appHeader" width="100%" height="170" backgroundImage="@Embed(source='br/com/infinitum/eprocurement/_assets/bg/bg_topo_principal.png')" />
 		<templates:LoginContainer hideEffect="{wipeOut}" showEffect="{wipeOut}" id="telaLogin" y="180" width="790" height="300" backgroundImage="@Embed(source='br/com/infinitum/eprocurement/_assets/bg/bg_tela_login.png')" x="{(this.width/2) - 400}"/>
 		<templates:MainTemplateVisualizer id="main" y="180" visible="false" selectedIndex="0" width="98%" height="90%" paddingLeft="10" paddingRight="10" paddingBottom="10" left="12" />
-		
 		<!-- notifications -->
 		<templates:NotificationComponent id="notificationError" styleName="notificationError" y="-150" NotificationError="true" x="{(this.width/2) - 150}" />
 		<templates:NotificationComponent id="notificationSuccess" styleName="notificationSuccess" NotificationSuccess="true" y="-150" x="{(this.width/2) - 150}" />

@@ -123,8 +123,8 @@ Alert
 }
 
 TabNavigator {
-   tabHeight: 24;
-   tabWidth: 159;
+   tabHeight: 30;
+   tabWidth: 110;
    cornerRadius: 0;
    horizontalAlign: right;
    tabOffset: 0;
